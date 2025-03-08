@@ -3,72 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflick - Streaming Service</title> 
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <title>Netflick - Streaming Service</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Search Bar -->
     
-    <link rel="stylesheet" href="./index.css" />
+<div class="container">
+    <div class="input7">
+      <input type="checkbox" />
+      <div class="input7-container">
+          <button>
+              <svg
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 19.9 19.7"
+              >
+                  <g fill="none">
+                      <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                      <circle cx="8" cy="8" r="7" />
+                  </g>
+              </svg>
+          </button>
+          <input placeholder="Search.." type="text" />
+      </div>
+    </div>
+  </div>
+  
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <div class="navbar">
-        
-<div class="text2">
-    <div>N</div>
-    <div>E</div>
-    <div>T</div>
-    <div>F</div>
-    <div>L</div>
-    <div>I</div>
-    <div>C</div>
-    <div>K</div>
-  </div>
-  
+        <div class="text2">
+          <div>N</div>
+          <div>E</div>
+          <div>T</div>
+          <div>F</div>
+          <div>L</div>
+          <div>I</div>
+          <div>C</div>
+          <div>K</div>
+        </div>
+
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Movies</a></li>
+            <li><a href="#">Genre</a></li>
             <li><a href="#">My List</a></li>
+            
           </ul>
         </nav>
       </div>
       <!-- Featured Content -->
       <div class="featured">
-        <h1>Watch Your Favorite Movies & Shows</h1>
+        <h1>Watch Your Favorite Shows</h1>
         <p>Unlimited streaming, anytime, anywhere.</p>
         <button>Play Now</button>
       </div>
     </header>
 
     <!-- Content Section -->
+
     <section class="content">
       <h2>Trending Now</h2>
       <div class="movie-grid">
         <div class="movie-item">
-          <img src="https://via.placeholder.com/200x300" alt="Movie 1" />
-          <p>Movie Title 1</p>
+          <img
+            src="https://img.awafim.tv/images/ZVvLBWRO2LWE.webp"
+            alt="Movie 1"
+          />
+          <p>Beauty in Black Season 1</p>
         </div>
         <div class="movie-item">
-          <img src="https://via.placeholder.com/200x300" alt="Movie 2" />
-          <p>Movie Title 2</p>
+          <img
+            src="https://img.awafim.tv/images/xZl4A85eLLEd.webp"
+            alt="Power Book III: Raising Kanan (2021 Series)"
+          />
+          <p>Power Book III: Raising Kanan</p>
         </div>
         <div class="movie-item">
-          <img src="https://via.placeholder.com/200x300" alt="Movie 3" />
-          <p>Movie Title 3</p>
+          <img
+            src="https://img.awafim.tv/images/XPVJjpBMDDDe.webp"
+            alt="S.W.A.T"
+          />
+          <p>S.W.A.T</p>
         </div>
         <div class="movie-item">
-          <img src="https://via.placeholder.com/200x300" alt="Movie 4" />
-          <p>Movie Title 4</p>
+          <img
+            src="https://img.awafim.tv/images/DGq5jqXXJoZl.webp"
+            alt="FROM"
+          />
+          <p>FROM</p>
         </div>
       </div>
     </section>
 
-</div>
-
-  
+    <div class="form9">
+      <h3>LogIn</h3>
+      <form action="">
+        <div class="inputBox">
+          <input id="form9-email" required type="text" />
+          <label for="form9-email">Email or Phone number</label>
+        </div>
+        <div class="inputBox">
+          <input id="form9-password" required type="password" />
+          <label for="form9-password">Password</label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          LogIn
+        </button>
+      </form>
+      <p class="forgot-password">
+        Don't have an account?
+        <a href="/#">SignUp</a>
+      </p>
+    </div>
 
     <footer>
-      <p>&copy; 2025 Netflick. All rights reserved.</p>
+      <p>&copy; 2025 Netflick By TRAPO. All rights reserved.</p>
+
+      <a class="member-footer-link" href="https://help.netflix.com/"></a>
     </footer>
   </body>
 </html>

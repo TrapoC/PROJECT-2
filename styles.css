@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ac6767;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header and Navbar */
+header {
+  background: linear-gradient(to bottom, rgba(22, 24, 56, 0.801), transparent);
+  position: relative;
+  height: 70vh;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+/* Featured Section */
+.featured {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.featured h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.featured p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.featured button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.featured button:hover {
+  background-color: #f40612;
+}
+
+/* Content Section */
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-item {
+  text-align: center;
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.movie-item img:hover {
+  transform: scale(1.05);
+}
+
+.movie-item p {
+  margin-top: 10px;
+  font: bolder;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  /* padding: 20px;
+  background-color: #cc0b0b;
+  margin-top: 40px; */
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle3 {
+  position: relative;
+  margin-top: 30px;
+}
+
+.toggle3 input {
+  display: none;
+}
+
+.toggle3 label {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 35px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle3 label:before {
+  top: 4px;
+  left: 4px;
+  width: 27px;
+  height: 27px;
+  border: 2px solid red;
+}
+
+.toggle3 label:after {
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 35px;
+  border: 2px solid #000;
+}
+
+.toggle3 label:before,
+.toggle3 label:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color;
+}
+
+.toggle3 input:checked + label:before {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 35px;
+  border-color: #000;
+  border: 2px solid #000;
+}
+
+.toggle3 input:checked + label:after {
+  top: 4px;
+  right: 4px;
+  width: 27px;
+  height: 27px;
+  border-color: green;
+  border: 2px solid green;
+}
+
+.text2 {
+    display: flex;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ec0707;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+  }
+  
+  .text2 div {
+    animation: text2-bounce 1s infinite;
+  }
+  
+  .text2 div:nth-of-type(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .text2 div:nth-of-type(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .text2 div:nth-of-type(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .text2 div:nth-of-type(4) {
+    animation-delay: 1.3s;
+  }
+  
+  .text2 div:nth-of-type(5) {
+    animation-delay: 0.5s;
+  }
+  
+  .text2 div:nth-of-type(6) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes text2-bounce {
+    0%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-20px);
+    }
+  }
+
+/* Search Bar */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input7 {
+  position: relative;
+}
+
+.input7 input[type="text"] {
+  height: 50px;
+  width: 0px;
+  font-size: 16px;
+  border: none;
+  padding-right: 40px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.input7 input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input7 svg {
+  height: 25px;
+  width: 25px;
+  stroke: white;
+}
+
+.input7 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #db1515;
+  box-shadow: #db0a0a 0px 5px 15px;
+}
+
+.input7 input[type="checkbox"]:checked ~ .input7-container input[type="text"] {
+  box-shadow: none;
+  outline: none;
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid #b10a0a;
+}
+
+.input7 input[type="checkbox"]:checked ~ .input7-container svg {
+  stroke: #dfd9d9;
+}
+.input7 input[type="checkbox"]:checked + .input7-container button {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+
+
+.form9 {
+  width: 200px;
+  height: max-content;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #a50808;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 15px 25px #aa0d0d;
+}
+.form9 h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.form9 .inputBox {
+  position: relative;
+}
+.form9 .inputBox input {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.form9 .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+}
+.form9 form button {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 10px 40px;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+.form9 button span {
+  position: absolute;
+  display: block;
+}
+.form9 button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  animation: form9-animation1 1.5s linear infinite;
+  background: linear-gradient(90deg, transparent, #fff);
+}
+.form9 button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  animation: form9-animation2 1.5s linear infinite;
+  animation-delay: 0.375s;
+  background: linear-gradient(180deg, transparent, #fff);
+}
+.form9 button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  animation: form9-animation3 1.5s linear infinite;
+  animation-delay: 0.75s;
+  background: linear-gradient(270deg, transparent, #fff);
+}
+.form9 button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  animation: form9-animation4 1.5s linear infinite;
+  animation-delay: 1.125s;
+  background: linear-gradient(360deg, transparent, #fff);
+}
+.form9 .forgot-password {
+  color: #d3d3d3;
+  font-size: 14px;
+  margin-top: 22px;
+}
+.form9 .forgot-password a {
+  color: #d3d3d3;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+.form9 .inputBox input:focus ~ label,
+.form9 .inputBox input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+.form9 button:hover {
+  color: #e62424;
+  background-color: #fff;
+}
+.form9 .inputBox input:focus {
+  box-shadow: none;
+}
+.form9 .forgot-password a:hover {
+  color: #fff;
+  background: transparent;
+}
+@keyframes form9-animation1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+@keyframes form9-animation2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+@keyframes form9-animation3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+@keyframes form9-animation4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+
