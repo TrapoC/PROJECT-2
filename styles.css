@@ -1,9 +1,10 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+  font-family: 'Roboto', sans-serif;
+ } /* Trapo is using font Roboto */
 
 body {
   background-color: #ac6767;
@@ -11,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header and Navbar */
+/* this is my Header and Navbar */
 header {
   background: linear-gradient(to bottom, rgba(22, 24, 56, 0.801), transparent);
   position: relative;
@@ -52,7 +53,7 @@ nav ul li a:hover {
   color: #e50914;
 }
 
-/* Featured Section */
+/* my Featured Section */
 .featured {
   position: absolute;
   top: 50%;
@@ -85,7 +86,7 @@ nav ul li a:hover {
   background-color: #f40612;
 }
 
-/* Content Section */
+/* My Content Section */
 .content {
   max-width: 1200px;
   margin: 40px auto;
@@ -124,7 +125,7 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-/* Footer */
+/* My Footer */
 footer {
   text-align: center;
   /* padding: 20px;
@@ -255,7 +256,7 @@ body {
     }
   }
 
-/* Search Bar */
+/* My Search Bar */
 
 .container {
   display: flex;
